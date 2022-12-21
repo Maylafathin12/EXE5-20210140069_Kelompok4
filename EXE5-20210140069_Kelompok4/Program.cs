@@ -4,7 +4,7 @@ namespace EXE5_20210140069_Kelompok4
 {
     class Node
     {
-      public string mayla;
+      public string nama;
         public Node next;
     }
 
@@ -15,6 +15,23 @@ namespace EXE5_20210140069_Kelompok4
         {
             Mayla = null;
             Ulya = null;
+        }
+        public void insert(string nm)
+        {
+            Console.WriteLine("\n Masukkan nama Mahasiswa");
+            nm = Console.ReadLine();
+            Node nodebaru = new Node();
+            nodebaru.nama = nm;
+            nodebaru.next = null;
+
+            if (Mayla == null)
+            {
+                Mayla = nodebaru;
+                Ulya = nodebaru;
+                return;
+            }
+            Ulya.next = nodebaru;
+            Mayla = nodebaru;
         }
 
     }
