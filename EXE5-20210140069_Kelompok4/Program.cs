@@ -33,6 +33,13 @@ namespace EXE5_20210140069_Kelompok4
             Ulya.next = nodebaru;
             Mayla = nodebaru;
         }
-
+        public void delete()
+        {
+            if (Mayla == null)
+            {
+                Console.WriteLine("Kosong!!");
+                return;
+            }
+        }
     }
 }
