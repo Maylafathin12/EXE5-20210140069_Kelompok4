@@ -4,35 +4,18 @@ namespace EXE5_20210140069_Kelompok4
 {
     class Node
     {
-        public int mayla;
-        public Node ulya;
-        public Node(int m, Node u)
-        {
-            mayla = m;
-            ulya = u;
-        }
+      public string mayla;
+        public Node next;
     }
-    class queue
+
+    class Queue
     {
-        Node top;
-
-        public queue()
+        Node Mayla, Ulya;
+        public Queue()
         {
-            top = null;
+            Mayla = null;
+            Ulya = null;
         }
-        bool empty()
-        {
-            if (top == null)
-                return (true);
-            else
-                return (false);
-        }
-    }
 
-
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
     }
 }
