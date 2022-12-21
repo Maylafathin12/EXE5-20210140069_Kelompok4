@@ -12,6 +12,22 @@ namespace EXE5_20210140069_Kelompok4
             ulya = u;
         }
     }
+    class queue
+    {
+        Node top;
+
+        public queue()
+        {
+            top = null;
+        }
+        bool empty()
+        {
+            if (top == null)
+                return (true);
+            else
+                return (false);
+        }
+    }
 
 
         static void Main(string[] args)
