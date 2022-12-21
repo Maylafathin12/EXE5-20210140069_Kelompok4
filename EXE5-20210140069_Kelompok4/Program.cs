@@ -43,7 +43,16 @@ namespace EXE5_20210140069_Kelompok4
             Ulya = Ulya.next;
 
             if (Mayla == null)
-                Ulya == null;
+                Ulya = null;
+        }
+        public void display()
+        {
+            if (Mayla == null)
+            {
+                Console.WriteLine("Kosong!!");
+                return;
+            }
+            Node display;
         }
     }
 }
