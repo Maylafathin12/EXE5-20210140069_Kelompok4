@@ -40,6 +40,10 @@ namespace EXE5_20210140069_Kelompok4
                 Console.WriteLine("Kosong!!");
                 return;
             }
+            Ulya = Ulya.next;
+
+            if (Mayla == null)
+                Ulya == null;
         }
     }
 }
